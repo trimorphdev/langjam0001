@@ -1,0 +1,8 @@
+my_comment = # Hello, {name as string}!
+
+extern printf(usize)
+
+main() {
+    name = "Jhon"
+    printf(my_comment) # => Hello, Jhon
+}

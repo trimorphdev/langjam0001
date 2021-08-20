@@ -1,0 +1,16 @@
+In this concept, everything is a comment, except comments.  Technically speaking, this means that
+everything is, in fact, a comment.  Even values.  I don't know anymore.
+
+This is a null terminated string, loaded into memory at runtime.  References to `my_str` will be
+pointers to its location in memory.
+/// my_str = "Hello, world!"
+
+Next, we load the LibC `printf` method, like so:
+/// extern printf(usize): void
+
+/// main() {
+This is the entry point for the program, pretty self explanatory.
+
+Now we can use a pointer to the `my_str` string, and send it to the `printf` method.
+///     printf(my_str)
+/// }
